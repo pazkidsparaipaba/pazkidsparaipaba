@@ -25,14 +25,14 @@
             color: white;
             position: relative;
             background-attachment: fixed;
-            image-rendering: -webkit-optimize-contrast; /* Melhora qualidade em alguns navegadores */
-            filter: brightness(1.1); /* Aumenta brilho para melhorar visibilidade */
+            image-rendering: -webkit-optimize-contrast;
+            filter: brightness(1.1);
         }
         .container {
-            background-color: rgba(255, 255, 255, 0.85); /* Reduzindo opacidade para mais transparência, mas mantendo legibilidade */
+            background-color: rgba(240, 240, 240, 0.95); /* Fundo mais claro para contraste com texto preto */
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra mais forte para destaque */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             max-width: 900px;
             width: 100%;
             z-index: 1;
@@ -42,8 +42,8 @@
             text-align: center;
             color: #007bff;
             margin-bottom: 20px;
-            font-size: 2.5em; /* Maior para destaque */
-            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra no texto para melhor visibilidade */
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
         }
         .tabs {
             display: flex;
@@ -52,7 +52,7 @@
             justify-content: center;
         }
         .tab-btn {
-            padding: 12px 24px; /* Maior para melhor clique */
+            padding: 12px 24px;
             background-color: #007bff;
             color: white;
             border: none;
@@ -62,7 +62,7 @@
         }
         .tab-btn:hover {
             background-color: #0056b3;
-            transform: translateY(-2px); /* Efeito de elevação */
+            transform: translateY(-2px);
         }
         .tab-btn.active {
             background-color: #28a745;
@@ -81,18 +81,18 @@
         }
         input {
             flex: 1;
-            padding: 12px; /* Maior para melhor digitação */
+            padding: 12px;
             border: 1px solid #ccc;
             border-radius: 8px;
             min-width: 150px;
-            background-color: #f9f9f9; /* Fundo claro para legibilidade */
+            background-color: #f9f9f9;
             transition: border 0.3s;
         }
         input:focus {
-            border: 1px solid #007bff; /* Destaque ao focar */
+            border: 1px solid #007bff;
         }
         button {
-            padding: 12px 18px; /* Maior para melhor clique */
+            padding: 12px 18px;
             background-color: #28a745;
             color: white;
             border: none;
@@ -102,7 +102,7 @@
         }
         button:hover {
             background-color: #218838;
-            transform: translateY(-2px); /* Efeito de elevação */
+            transform: translateY(-2px);
         }
         .child-entry {
             display: flex;
@@ -112,16 +112,17 @@
             margin-bottom: 10px;
             border: 1px solid #ddd;
             border-radius: 8px;
-            background-color: #f9f9f9;
+            background-color: #ffffff; /* Fundo branco para maior contraste */
             transition: transform 0.2s, box-shadow 0.2s;
         }
         .child-entry:hover {
             transform: scale(1.02);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .child-number {
             font-weight: bold;
             flex: 1;
+            color: #000000; /* Texto preto para visibilidade */
         }
         .status-indicator {
             width: 25px;
@@ -153,7 +154,7 @@
             text-align: center;
             font-size: 1.1em;
             color: #856404;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         #search-input {
             margin-bottom: 20px;
