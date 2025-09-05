@@ -352,7 +352,7 @@
                 const permission = await Notification.requestPermission();
                 if (permission !== 'granted') return alert('Permissão negada.');
             }
-            const token = await getToken(messaging, { vapidKey: 'SUA_VAPID_KEY' });
+            const token = await getToken(messaging, { vapidKey: 'l1bPV0usiOWVyQWFUOyPwl0N4TjyWlCUSqXjVK-q40Y' });
             const { data } = await supabase.from('children').select('fcm_tokens').eq('number', currentNumber).single();
             let tokens = data?.fcm_tokens || [];
             if (!tokens.includes(token)) {
@@ -373,4 +373,5 @@
         }
     </script>
 </body>
+
 </html>
